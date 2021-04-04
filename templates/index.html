@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Predict Your chances for Loan</h1>
+
+    <div class="form">
+        <form action="/predict" method="POST">
+            <input type="number" name="Age" id="Age" placeholder="Age">
+            <input type="number" name="Experience" id="Experience" placeholder="Experience">
+            <input type="number" name="Income" id="Income" placeholder="Income">
+            <input type="number" name="Family" id="Family" placeholder="Family">
+            <input type="number" name="CCAvg" id="CCAvg" placeholder="CCAvg">
+            <input type="number" name="Education" id="Education" placeholder="Education">
+            <input type="number" name="Mortgage" id="Mortgage" placeholder="Mortgage">
+            <input type="number" name="Securities Account" id="Securities Account" placeholder="Securities Account">
+            <input type="number" name="CD Account" id="CD Account" placeholder="CD Account">
+            <input type="number" name="Online" id="Online" placeholder="Online">
+            <input type="number" name="CreditCard" id="CreditCard" placeholder="CreditCard">
+            
+            <select name="Personal Loan" id="Personal Loan">
+  <option value="yes">Yes</option>
+  <option value="no">No</option>
+</select>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</div>
+{% endblock %}
