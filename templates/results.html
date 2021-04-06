@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<title>Mobile Price</title>
+		<title>Bankloan Prediction</title>
 		<link rel="shortcut icon" href="{{ url_for('static', filename='diabetes-favicon.ico') }}">
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
@@ -24,20 +24,20 @@
 		<div class="results">
 			{% if prediction==0 %}
 				<h1>Prediction: <span class='danger'>No Loan</span></h1>
-				<img class="gif" src="{{ url_for('static', filename='plain-img.jpg') }}" alt="Mobile Image">
+				<img class="gif" src="{{ url_for('static', filename='plain-img.jpg') }}" alt="Image">
 			{% elif prediction==1 %}
 				<h1>Prediction: <span class='safe'>Yes Loan</span></h1>
-				<img class="gif1" src="{{ url_for('static', filename='BG_Image.jpg') }}" alt="Mobile 2 Image">
+				<img class="gif1" src="{{ url_for('static', filename='BG_Image.jpg') }}" alt="Image">
 			{% endif %}
 		</div>
 
 		<!-- Footer -->
        <div class='footer'>
            <div class="contact">
-               <a target="_blank" href="https://github.com/umeshkumarpal1651/umeshml01"><i class="fab fa-github fa-lg contact-icon"></i></a>
-               <a target="_blank" href="https://www.linkedin.com/in/umeshkumar-pal-457368137/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+               <a target="_blank" https://github.com/komalpachupate/Bankloan1"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank"https://www.linkedin.com/in/komal-pachupate-b425311b6"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
            </div>
-           <p class='footer-description'>Made with ❤️ by Umeshkumar Pal</p>
+           <p class='footer-description'>Made with ❤️ by Komal Pachupate</p>
        </div>
 
 	</body>
