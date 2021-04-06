@@ -24,10 +24,8 @@
 		<div class="results">
 			{% if prediction==0 %}
 				<h1>Prediction: <span class='danger'>No Loan</span></h1>
-				<img class="gif" src="{{ url_for('static', filename='plain-img.jpg') }}" alt="Image">
 			{% elif prediction==1 %}
 				<h1>Prediction: <span class='safe'>Yes Loan</span></h1>
-				<img class="gif1" src="{{ url_for('static', filename='BG_Image.jpg') }}" alt="Image">
 			{% endif %}
 		</div>
 
